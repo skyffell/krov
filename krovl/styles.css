@@ -1,0 +1,376 @@
+.h1_color{
+    color: black;
+}
+
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn {
+    background: #ff6f61;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    background: #e65a50;
+    transform: translateY(-2px);
+}
+
+.btn:active {
+    background: #cc4a40;
+    transform: translateY(0);
+}
+
+/* Хедер */
+.main-header {
+    background: #333;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.logo span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Бургер-меню */
+.burger-menu {
+    display: none; /* По умолчанию скрываем */
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 24px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1001;
+}
+
+.burger-line {
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* Навигация */
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.main-nav ul li {
+    display: inline;
+}
+
+.main-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.main-nav ul li a:hover {
+    color: #ff6f61;
+}
+
+.main-nav ul li a.btn {
+    background: #ff6f61;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.main-nav ul li a.btn:hover {
+    background: #e65a50;
+    transform: translateY(-2px);
+}
+
+/* Герой-секция */
+#hero {
+    background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+    color: #fff;
+    padding: 150px 0;
+    text-align: center;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Секция "О нас" */
+#about {
+    padding: 60px 0;
+    text-align: center;
+}
+
+#about p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Секция "Услуги" */
+#services {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.service-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    background: #f4f4f4;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 1rem;
+}
+
+/* Секция "Галерея" */
+#gallery {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.gallery-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.gallery-grid img {
+    width: 30%;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+/* Секция "Контакты" */
+#contact {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 2px solid #ff6f61;
+    border-radius: 10px;
+    background: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#contact-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Футер */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+footer p {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #888;
+}
+
+footer .highlight-s,
+footer .highlight-d {
+    color: #fff;
+}
+
+footer .btn {
+    margin-top: 10px;
+    background: #ff6f61;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+footer .btn:hover {
+    background: #e65a50;
+    transform: translateY(-2px);
+}
+
+/* Адаптивность */
+@media (max-width: 1024px) {
+    .service-item {
+        width: 45%;
+    }
+
+    .gallery-grid img {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .burger-menu {
+        display: flex; /* Показываем бургер-меню */
+    }
+
+    .main-nav {
+        position: absolute;
+        top: 70px; /* Отступ от хедера */
+        right: 0;
+        width: 100%;
+        background: #333;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%); /* Скрываем навигацию */
+        transition: transform 0.3s ease;
+    }
+
+    .main-nav.active {
+        transform: translateX(0); /* Показываем навигацию */
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px 0;
+    }
+
+    .main-nav ul li a {
+        font-size: 1.2rem;
+    }
+
+    .main-nav ul li a.btn {
+        padding: 10px 20px;
+    }
+
+    .service-item {
+        width: 100%;
+    }
+
+    .gallery-grid img {
+        width: 100%;
+    }
+
+    #hero h1 {
+        font-size: 2.5rem;
+    }
+
+    #hero p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #hero h1 {
+        font-size: 2rem;
+    }
+
+    #hero p {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    .service-item h3 {
+        font-size: 1.2rem;
+    }
+
+    .service-item p {
+        font-size: 0.9rem;
+    }
+}

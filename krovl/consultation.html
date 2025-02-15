@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заказать консультацию</title>
+    <link rel="stylesheet" href="styles2.css"> <!-- Подключаем styles2.css -->
+</head>
+<body>
+    <!-- Хедер -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Логотип и название -->
+                <div class="logo">
+                    <img src="https://via.placeholder.com/50" alt="Логотип">
+                    <span>КровляПрофи</span>
+                </div>
+                <!-- Бургер-меню -->
+                <button class="burger-menu" aria-label="Открыть меню">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </button>
+                <!-- Навигация -->
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#services">Услуги</a></li>
+                        <li><a href="#gallery">Галерея</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                        <li><a href="consultation.html" class="btn">Заказать консультацию</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <section id="consultation-hero">
+        <div class="container">
+            <h1 class="h1_color">Заказать консультацию</h1>
+            <p class="h1_color">Получите профессиональную консультацию по вашей кровле!</p>
+            <a href="#consultation-form" class="btn">Оставить заявку</a>
+        </div>
+    </section>
+
+    <section id="consultation-info">
+        <div class="container">
+            <h2>О консультации</h2>
+            <p>Наши специалисты помогут вам выбрать оптимальное решение для вашей кровли, ответят на все вопросы и предложат лучшие варианты.</p>
+        </div>
+    </section>
+
+    <section id="consultation-form">
+        <div class="container">
+            <h2>Форма заявки</h2>
+            <div class="form-container">
+                <form id="consultation-form">
+                    <input type="text" id="name" placeholder="Ваше имя" required>
+                    <input type="tel" id="phone" placeholder="Ваш телефон" required>
+                    <textarea id="message" placeholder="Ваш вопрос или комментарий"></textarea>
+                    <button type="submit" class="btn">Отправить заявку</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer>
+        <div class="container">
+            <p><span class="highlight-s">S</span>kyffell<span class="highlight-d">D</span>esign</p>
+            <a href="#top" class="btn">Наверх</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
